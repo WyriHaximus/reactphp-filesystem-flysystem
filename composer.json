@@ -1,0 +1,23 @@
+{
+    "name": "wyrihaximus/react-filesystem-flysystem",
+    "description": "react/filesystem Flysystem Adapter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cees-Jan Kiewiet",
+            "email": "ceesjank@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.5||^7.0",
+        "react/filesystem": "dev-master",
+        "league/flysystem": "^1.0",
+        "wyrihaximus/react-child-process-pool": "^1.0.0",
+        "league/flysystem-webdav": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WyriHaximus\\React\\Filesystem\\Flysystem\\": "src/"
+        }
+    }
+}
