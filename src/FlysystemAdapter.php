@@ -20,8 +20,9 @@ use React\Stream\Util;
 use WyriHaximus\React\ChildProcess\Messenger\Messages\Factory;
 use WyriHaximus\React\ChildProcess\Messenger\Messages\Payload;
 use WyriHaximus\React\ChildProcess\Messenger\Messenger;
-use WyriHaximus\React\ChildProcess\Pool\Pool\Flexible;
+use WyriHaximus\React\ChildProcess\Pool\Factory\Flexible;
 use WyriHaximus\React\ChildProcess\Pool\PoolInterface;
+use WyriHaximus\React\ChildProcess\Pool\WorkerInterface;
 
 class FlysystemAdapter implements AdapterInterface
 {
@@ -79,15 +80,17 @@ class FlysystemAdapter implements AdapterInterface
         $this->invoker = \React\Filesystem\getInvoker($this, $options, 'invoker', 'React\Filesystem\InstantInvoker');
         $this->openFileLimiter = new OpenFileLimiter(\React\Filesystem\getOpenFileLimit($options));
 
-        $this->pool = Flexible::createFromClass(Worker::class, $loop, [
+        Flexible::createFromClass(Worker::class, $loop, [
             'min_size' => 0,
             'max_size' => 50,
-        ]);
+        ])->then(function (PoolInterface $pool) {
+            $this->pool = $pool;
+        });
 
         Util::forwardEvents($this->pool, $this, ['error']);
 
-        $this->pool->on('messenger', function (Messenger $messenger) {
-            $messenger->rpc(Factory::rpc('setFlysystem', [
+        $this->pool->on('worker', function (WorkerInterface $worker) {
+            $worker->rpc(Factory::rpc('setFlysystem', [
                 'flysystem' => serialize($this->flysystem),
             ]));
         });
@@ -208,7 +211,7 @@ class FlysystemAdapter implements AdapterInterface
      * @param string $path
      * @return \React\Promise\PromiseInterface
      */
-    public function ls($path, $flags = EIO_READDIR_DIRS_FIRST)
+    public function ls($path)
     {
         $stream = new ObjectStream();
 
