@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fee3e0c33c36e39179c8a8f9e8daad5e",
-    "content-hash": "a992aef76ff85f59e1b1f596fe451348",
+    "hash": "02c99af96201dc0805880997968c4ce7",
+    "content-hash": "772df03fc8ca26e697c59ecaf4d9ab48",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -255,53 +255,6 @@
             "time": "2016-03-14 21:54:11"
         },
         {
-            "name": "league/flysystem-webdav",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/flysystem-webdav.git",
-                "reference": "da04b588efe29c9e80f9484236a3a23e5fecded1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-webdav/zipball/da04b588efe29c9e80f9484236a3a23e5fecded1",
-                "reference": "da04b588efe29c9e80f9484236a3a23e5fecded1",
-                "shasum": ""
-            },
-            "require": {
-                "league/flysystem": "~1.0",
-                "php": ">=5.4.0",
-                "sabre/dav": "~2.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Flysystem\\WebDAV\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Frank de Jonge",
-                    "email": "info@frenky.net"
-                }
-            ],
-            "description": "Flysystem adapter for WebDAV",
-            "time": "2016-03-17 13:50:19"
-        },
-        {
             "name": "react/child-process",
             "version": "v0.4.0",
             "source": {
@@ -392,12 +345,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/filesystem.git",
-                "reference": "a328ac5eadda5015fcdb998671ff2c52cedb2ac7"
+                "reference": "729451d3c5ec182e5eb3586d8e9d730b31147ad9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/filesystem/zipball/a328ac5eadda5015fcdb998671ff2c52cedb2ac7",
-                "reference": "a328ac5eadda5015fcdb998671ff2c52cedb2ac7",
+                "url": "https://api.github.com/repos/reactphp/filesystem/zipball/729451d3c5ec182e5eb3586d8e9d730b31147ad9",
+                "reference": "729451d3c5ec182e5eb3586d8e9d730b31147ad9",
                 "shasum": ""
             },
             "require": {
@@ -440,20 +393,20 @@
                 "eio",
                 "filesystem"
             ],
-            "time": "2016-03-19 23:29:42"
+            "time": "2016-03-28 14:33:40"
         },
         {
             "name": "react/promise",
-            "version": "v2.2.2",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "3aacad8bf10c7d83e6fa2089d413529888c2bedf"
+                "reference": "f942da7b505d1a294284ab343d05df42d02ad6d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/3aacad8bf10c7d83e6fa2089d413529888c2bedf",
-                "reference": "3aacad8bf10c7d83e6fa2089d413529888c2bedf",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/f942da7b505d1a294284ab343d05df42d02ad6d9",
+                "reference": "f942da7b505d1a294284ab343d05df42d02ad6d9",
                 "shasum": ""
             },
             "require": {
@@ -484,7 +437,7 @@
                 }
             ],
             "description": "A lightweight implementation of CommonJS Promises/A for PHP",
-            "time": "2016-02-26 19:09:02"
+            "time": "2016-03-31 13:10:33"
         },
         {
             "name": "react/stream",
@@ -533,248 +486,6 @@
                 "stream"
             ],
             "time": "2015-10-07 18:32:58"
-        },
-        {
-            "name": "sabre/dav",
-            "version": "2.1.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fruux/sabre-dav.git",
-                "reference": "9f8c1939a3f66eb7170489fc48579ffd1461af62"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-dav/zipball/9f8c1939a3f66eb7170489fc48579ffd1461af62",
-                "reference": "9f8c1939a3f66eb7170489fc48579ffd1461af62",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "ext-date": "*",
-                "ext-dom": "*",
-                "ext-iconv": "*",
-                "ext-libxml": "*",
-                "ext-mbstring": "*",
-                "ext-pcre": "*",
-                "ext-simplexml": "*",
-                "ext-spl": "*",
-                "php": ">=5.4.1",
-                "sabre/event": "^2.0.0",
-                "sabre/http": "^3.0.0",
-                "sabre/vobject": "^3.3.4"
-            },
-            "require-dev": {
-                "evert/phpdoc-md": "~0.1.0",
-                "phpunit/phpunit": "~4.2",
-                "squizlabs/php_codesniffer": "~1.5.3"
-            },
-            "suggest": {
-                "ext-curl": "*",
-                "ext-pdo": "*"
-            },
-            "bin": [
-                "bin/sabredav",
-                "bin/naturalselection"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Sabre\\DAV\\": "lib/DAV/",
-                    "Sabre\\DAVACL\\": "lib/DAVACL/",
-                    "Sabre\\CalDAV\\": "lib/CalDAV/",
-                    "Sabre\\CardDAV\\": "lib/CardDAV/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Evert Pot",
-                    "email": "me@evertpot.com",
-                    "homepage": "http://evertpot.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "WebDAV Framework for PHP",
-            "homepage": "http://sabre.io/",
-            "keywords": [
-                "CalDAV",
-                "CardDAV",
-                "WebDAV",
-                "framework",
-                "iCalendar"
-            ],
-            "time": "2016-03-10 20:49:48"
-        },
-        {
-            "name": "sabre/event",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fruux/sabre-event.git",
-                "reference": "337b6f5e10ea6e0b21e22c7e5788dd3883ae73ff"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-event/zipball/337b6f5e10ea6e0b21e22c7e5788dd3883ae73ff",
-                "reference": "337b6f5e10ea6e0b21e22c7e5788dd3883ae73ff",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*",
-                "sabre/cs": "~0.0.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Sabre\\Event\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Evert Pot",
-                    "email": "me@evertpot.com",
-                    "homepage": "http://evertpot.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "sabre/event is a library for lightweight event-based programming",
-            "homepage": "http://sabre.io/event/",
-            "keywords": [
-                "EventEmitter",
-                "events",
-                "hooks",
-                "plugin",
-                "promise",
-                "signal"
-            ],
-            "time": "2015-05-19 10:24:22"
-        },
-        {
-            "name": "sabre/http",
-            "version": "3.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fruux/sabre-http.git",
-                "reference": "6b06c03376219b3d608e1f878514ec105ed1b577"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-http/zipball/6b06c03376219b3d608e1f878514ec105ed1b577",
-                "reference": "6b06c03376219b3d608e1f878514ec105ed1b577",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.4",
-                "sabre/event": ">=1.0.0,<3.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.3",
-                "squizlabs/php_codesniffer": "~1.5.3"
-            },
-            "suggest": {
-                "ext-curl": " to make http requests with the Client class"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Sabre\\HTTP\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Evert Pot",
-                    "email": "me@evertpot.com",
-                    "homepage": "http://evertpot.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "The sabre/http library provides utilities for dealing with http requests and responses. ",
-            "homepage": "https://github.com/fruux/sabre-http",
-            "keywords": [
-                "http"
-            ],
-            "time": "2015-05-11 15:25:57"
-        },
-        {
-            "name": "sabre/vobject",
-            "version": "3.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fruux/sabre-vobject.git",
-                "reference": "061dd47ce40074bf63da8e3d6dbe7f18b5a4f3a4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-vobject/zipball/061dd47ce40074bf63da8e3d6dbe7f18b5a4f3a4",
-                "reference": "061dd47ce40074bf63da8e3d6dbe7f18b5a4f3a4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*",
-                "squizlabs/php_codesniffer": "*"
-            },
-            "bin": [
-                "bin/vobject",
-                "bin/generate_vcards"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sabre\\VObject\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Evert Pot",
-                    "email": "me@evertpot.com",
-                    "homepage": "http://evertpot.com/",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dominik Tobschall",
-                    "email": "dominik@fruux.com",
-                    "homepage": "http://tobschall.de/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "The VObject library for PHP allows you to easily parse and manipulate iCalendar and vCard objects",
-            "homepage": "http://sabre.io/vobject/",
-            "keywords": [
-                "VObject",
-                "iCalendar",
-                "jCal",
-                "jCard",
-                "vCard"
-            ],
-            "time": "2016-01-11 18:13:23"
         },
         {
             "name": "tivie/php-os-detector",
@@ -922,23 +633,23 @@
         },
         {
             "name": "wyrihaximus/react-child-process-pool",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-child-process-pool.git",
-                "reference": "cb33aea29699eeb38533d66c38d0aba468df4106"
+                "reference": "a99dd4464e78208965bd230f59e7949c55212c22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-child-process-pool/zipball/cb33aea29699eeb38533d66c38d0aba468df4106",
-                "reference": "cb33aea29699eeb38533d66c38d0aba468df4106",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-child-process-pool/zipball/a99dd4464e78208965bd230f59e7949c55212c22",
+                "reference": "a99dd4464e78208965bd230f59e7949c55212c22",
                 "shasum": ""
             },
             "require": {
                 "evenement/evenement": "^2.0",
                 "php": "^5.4||^7.0",
                 "wyrihaximus/cpu-core-detector": "^1.0.0",
-                "wyrihaximus/react-child-process-messenger": "^2.7",
+                "wyrihaximus/react-child-process-messenger": "^2.7.1",
                 "wyrihaximus/ticking-promise": "^1.5"
             },
             "require-dev": {
@@ -966,7 +677,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-03-12 21:52:19"
+            "time": "2016-04-01 20:37:36"
         },
         {
             "name": "wyrihaximus/react-child-process-promise",

@@ -12,8 +12,7 @@
         "php": "^5.5||^7.0",
         "react/filesystem": "dev-master",
         "league/flysystem": "^1.0",
-        "wyrihaximus/react-child-process-pool": "^1.0.0",
-        "league/flysystem-webdav": "^1.0"
+        "wyrihaximus/react-child-process-pool": "^1.1.0"
     },
     "autoload": {
         "psr-4": {
