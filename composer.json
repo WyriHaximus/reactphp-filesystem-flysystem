@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": "^5.5||^7.0",
-        "react/filesystem": "dev-master",
+        "react/filesystem": "^0.1",
         "league/flysystem": "^1.0",
         "wyrihaximus/react-child-process-pool": "^1.1.0"
     },
